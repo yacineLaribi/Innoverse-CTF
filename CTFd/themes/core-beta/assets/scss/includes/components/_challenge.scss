@@ -14,27 +14,32 @@
   box-shadow: 0 0 15px var(--bs-secondary);
 
   &.challenge-solved {
-    background-color: #29c830;
+    background-color: #3666AF !important;
 
     &:hover {
-      background-color: #37d63e;
+      background-color: #1c3d6d !important;
     }
   }
 }
 
 [data-bs-theme="dark"] .challenge-button {
   border: none;
-  background-color: var(--bs-gray-dark);
+  background-color: #101828;
 
   &:hover {
-    background-color: var(--bs-gray);
+    background-color: #131f36;
   }
 
   &.challenge-solved {
-    background-color: #29c830;
+    background-color: #3666AF !important;
 
     &:hover {
-      background-color: #37d63e;
+      background-color: #1c3d6d !important;
     }
   }
+}
+
+.challenge-button{
+  background-color: #101828 !important;
+
 }

@@ -52,7 +52,20 @@
                           ...c.tags.map((tag) => `tag-${tag.value.replace(/ /g, '-')}`),
                         ];"
                         :value="c.id" @click="loadChallenge(c.id)"
+                        style="background-color: #101828;" 
+                        onmouseover="this.style.backgroundColor='#131f36'" 
+                        onmouseout="this.style.backgroundColor='#101828'"
                     >
+                    <style>
+                      .challenge-solved{
+                        background-color: #3666AF !important;
+
+                      }
+                      .challenge-solved:hover{
+                        background-color: #1c3d6d !important;
+
+                      }
+                    </style>
 
                       <div class="challenge-inner my-3">
                         <p x-text="c.name"></p>

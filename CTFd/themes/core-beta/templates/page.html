@@ -2,7 +2,18 @@
 
 {% block content %}
   <div class="container">
-    {{ content | safe }}
+
+    <div class="d-flex justify-content-center align-items-center mt-5">
+      <!-- Dark mode image (hidden by default) -->
+      <img id="logo-dark" 
+           src="{{ url_for('views.themes', theme='core-beta', path='img/logo/2-2.png') }}" 
+           class="mt-5 mw-100 d-block"  style="filter: drop-shadow(0 5px 10px rgba(217, 217, 217, 0.5));"
+           alt="logo">
+    </div>
+    
+
+    
+    
   </div>
 {% endblock %}
 
